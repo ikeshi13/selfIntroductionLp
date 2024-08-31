@@ -1,0 +1,197 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 全体の設定 */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #121212;
+  padding: 0 20px;
+}
+
+/* ナビゲーション */
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1c1c1c;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+/* ヒーローセクション */
+.hero {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e65c00;
+}
+
+/* セクション */
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff;
+  border-bottom: 2px solid #ff6600;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 0 auto 20px;
+  max-width: 800px;
+}
+
+/* スキルセクション */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skill-item {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.skill-item h3 {
+  font-size: 1.5em;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+/* プロジェクトセクション */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-item {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.project-item h3 {
+  font-size: 1.5em;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+/* フッターセクション */
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer p,
+footer ul {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a:hover {
+  color: #e65c00;
+}
+
+/* フェードイン効果 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* スライドイン効果 */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
