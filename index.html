@@ -9,13 +9,18 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#who">Who</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item home"><a href="./index.html">Home</a></li>
+          <div class="nav-center">
+            <li class="nav-item"><a href="#who">Who</a></li>
+            <li class="nav-item"><a href="#about">About Me</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#like">Like</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </div>
         </ul>
       </nav>
       <div class="hero">
@@ -49,7 +54,7 @@
           </div>
           <div class="skill-item fade-in">
             <h3>Salesforce</h3>
-            <p>LWCでコンポーネントを作成し、ApexでSOQLでデータの操作を行うことが好きです。Javaより厳密ではないので書きやすいですが制限が多いので少し 難しいです。</p>
+            <p>LWCでコンポーネントを作成し、ApexでSOQLでデータの操作を行うことが好きです。Javaより厳密ではないので書きやすいですが制限が多いので少し難しいです。</p>
           </div>
         </div>
       </section>
@@ -90,8 +95,8 @@
         <h2 class="slide-in">Portfolio</h2>
         <div class="portfolio-grid">
           <div class="portfolio-item fade-in">
-            <h3>pokeAPI</h3>
-            <a href="pokeAPI.html">ページへ</a>
+            <a class="PortFolioLink" href="DiscordClone/DiscordClone.html">Discord Clone</a>
+            <p>Discordのクローンを作成しました。該当のUdemyは<a class="UdemyLink" href="https://www.udemy.com/course/discord-clone-udemy/?couponCode=KEEPLEARNING">こちら</a></p>
           </div>
         </div>
       </section>
@@ -102,11 +107,6 @@
       <p class="fade-in">お問い合わせは<a href="mailto:ikeshin0016@gmail.com">メール</a>でお気軽にどうぞ。</p>
       <p class="fade-in">ソーシャルメディアでも繋がりましょう！</p>
       <ul>
-        <!-- Instagramへのアイコンリンク -->
-        <li>
-          <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram icon"></i></a>
-        </li>
-        <!-- GitHubへのアイコンリンク -->
         <li>
           <a href="https://github.com/ikeshi13" target="_blank"><i class="fab fa-github icon"></i></a>
         </li>
